@@ -59,7 +59,7 @@ $ pacstrap /mnt base linux linux-firmware
 ```
 $ genfstab -U /mnt >> /mnt/etc/fstab
 $ arch-chroot /mnt
-$ ln -sf /usr/share/zoneinfo/Pacific/Auckland /etc/localtime
+$ ln -sf /usr/share/zoneinfo/*Region*/*City* /etc/localtime
 $ hwclock --systohc
 ```
 Edit ```/etc/locale.gen``` and uncomment ```en_US.UTF-8 UTF-8```
