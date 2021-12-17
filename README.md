@@ -61,6 +61,7 @@ $ genfstab -U /mnt >> /mnt/etc/fstab
 $ arch-chroot /mnt
 $ ln -sf /usr/share/zoneinfo/*Region*/*City* /etc/localtime
 $ hwclock --systohc
+$ pacman -S *cli editor of your choice*
 ```
 Edit ```/etc/locale.gen``` and uncomment ```en_US.UTF-8 UTF-8```
 ```
@@ -74,7 +75,7 @@ $ passwd *username*
 
 ## Installing other packages
 ```
-$ pacman -S sudo vim networkmanager
+$ pacman -S sudo networkmanager
 $ systemctl enable NetworkManager.service
 ```
 
