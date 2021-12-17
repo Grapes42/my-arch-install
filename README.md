@@ -79,7 +79,7 @@ $ systemctl enable NetworkManager.service
 ```
 
 ## Installing & Setting up GRUB
-If you already have another distro with grub on it just update GRUB there. Otherwise:
+If you already have another distro with GRUB on it just update GRUB there. Otherwise:
 ```
 $ pacman -S grub
 $ grub-install --target=i386-pc /dev/*disk*
